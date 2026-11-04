@@ -1,0 +1,83 @@
+{
+  "_version": "1",
+  "delegation": {
+    "execution_constraints": {
+      "x402": {
+        "allowed_endpoints": [
+          {
+            "host": "api.anchor-x402.com",
+            "method": "POST",
+            "path_prefix": "/v1/roll"
+          }
+        ],
+        "scope_mode": "scoped"
+      }
+    },
+    "payment_policy": {
+      "currency": "USD",
+      "max_amount_per_tx": "0.01",
+      "max_total_amount": "0.05"
+    },
+    "task": {
+      "summary": "ThoughtProof Kite x OpenServ demo: one verifiable RNG roll at api.anchor-x402.com after TP gate ALLOW."
+    }
+  },
+  "hint": "x402 request to https://api.anchor-x402.com/v1/roll completed with HTTP 200.",
+  "next_command": "",
+  "payment_requirement": {
+    "amount": "0.001",
+    "amount_onchain": "1000",
+    "asset": "USDC",
+    "decimals": 6
+  },
+  "session_id": "agent_REDACTED",
+  "session_status": "active",
+  "status": "success",
+  "usage": {
+    "asset_symbol": "USDC",
+    "decimals": 6,
+    "reserved_total": "0",
+    "reserved_total_raw": "0",
+    "spent_total": "0.002",
+    "spent_total_raw": "2000"
+  },
+  "x402": {
+    "chain_id": 2366,
+    "method": "POST",
+    "network": "eip155:8453",
+    "parsed_response_body": {
+      "commitment": null,
+      "count": 1,
+      "domain": "anchor-x402/roll/v1",
+      "input_hash": "b840fb035fbbaed893e100bd94e67c0a39b74b3d8d0e160e093eba70ec2bb695",
+      "label": "thoughtproof-kite-demo",
+      "range": [
+        1,
+        100
+      ],
+      "result": [
+        12
+      ],
+      "result_hash": "70ffe12ec18e17934d3693cba196f388aabe3ff3e9c251cc66c8624ebedcba69",
+      "scheme": "eip191",
+      "signature": "0x5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a",
+      "signer": "0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6"
+    },
+    "payment_response": {
+      "network": "eip155:8453",
+      "payer": "0xd801d12cD2F976505B23B112496754B902f2dC16",
+      "success": true,
+      "transaction": "0xe152eed87817b84fdabbe84a3ca2efb3167179959d86f3d01a8fd1d9b35ff75c"
+    },
+    "response_body": "{\"commitment\":null,\"count\":1,\"domain\":\"anchor-x402/roll/v1\",\"input_hash\":\"b840fb035fbbaed893e100bd94e67c0a39b74b3d8d0e160e093eba70ec2bb695\",\"label\":\"thoughtproof-kite-demo\",\"range\":[1,100],\"result\":[12],\"result_hash\":\"70ffe12ec18e17934d3693cba196f388aabe3ff3e9c251cc66c8624ebedcba69\",\"scheme\":\"eip191\",\"signature\":\"0x5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a\",\"signer\":\"0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6\"}",
+    "response_headers": {
+      "Content-Length": "503",
+      "Content-Type": "application/json",
+      "Date": "Wed, 04 Nov 2026 17:21:52 GMT"
+    },
+    "status_code": 200,
+    "url": "https://api.anchor-x402.com/v1/roll",
+    "wallet_address": "0xd801d12cD2F976505B23B112496754B902f2dC16",
+    "wallet_type": "agent_wallet"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "executed": false,
+  "final": "{\"outcome\":\"ERROR\",\"verdict\":\"ALLOW\",\"tx_id\":null,\"mode\":null}",
+  "verdict": "ALLOW",
+  "receipt_id": "sent_cb89b449219446c2",
+  "reason": "All critical steps adequately supported.\n\n[sentinel-cascade agreement_allow: primary=ALLOW, secondary=ALLOW]",
+  "kite_calls": 0,
+  "pays": [],
+  "error": null
+}

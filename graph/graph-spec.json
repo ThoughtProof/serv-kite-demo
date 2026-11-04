@@ -1,0 +1,14 @@
+{
+  "name": "serv-kite-pay-only-if",
+  "input": "JSON in instructions: {amount, asset, recipient, purpose, mandate}",
+  "steps": [
+    { "id": "rules", "type": "Script", "source": "src/rules.js#evaluateRules", "next": { "pass=true": "plan_and_verify", "pass=false": "END:REJECTED_BY_RULES" } },
+    { "id": "plan_and_verify", "type": "Agent", "tools": ["verify_before_action"], "promptRef": "graph-spec.md#step-2" },
+    { "id": "gate", "type": "Decision", "enum": ["ALLOW", "BLOCK", "UNCERTAIN"], "default": "UNCERTAIN", "next": { "ALLOW": "pay", "BLOCK": "END:HOLD", "UNCERTAIN": "END:HOLD" } },
+    { "id": "pay", "type": "Agent", "tools": ["kite_pay"], "promptRef": "graph-spec.md#step-4" }
+  ],
+  "tools": {
+    "verify_before_action": { "type": "object", "required": ["mandate","amount","asset","recipient","purpose"], "properties": { "mandate": {"type":"string"}, "amount": {"type":"number"}, "asset": {"type":"string"}, "recipient": {"type":"string"}, "purpose": {"type":"string"} } },
+    "kite_pay": { "type": "object", "required": ["amount","asset","recipient","purpose"], "properties": { "amount": {"type":"number"}, "asset": {"type":"string"}, "recipient": {"type":"string"}, "purpose": {"type":"string"} } }
+  }
+}

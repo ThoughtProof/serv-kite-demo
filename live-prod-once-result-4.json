@@ -1,0 +1,143 @@
+{
+  "executed": true,
+  "final": "{\"outcome\":\"PAID\",\"verdict\":\"ALLOW\",\"tx_id\":\"0x53b89a35436f3d572dafe401b586ab3944b4f28d66e294213efa7b0b89fd3088\",\"mode\":\"LIVE\"}",
+  "verdict": "ALLOW",
+  "receipt_id": "sent_6d446dffce334d46",
+  "reason": "All critical steps adequately supported.\n\n[sentinel-cascade agreement_allow: primary=ALLOW, secondary=ALLOW]",
+  "kite_calls": 1,
+  "pays": [
+    {
+      "ok": true,
+      "mode": "LIVE",
+      "network": "base",
+      "note": "Kite Passport PRODUCTION payment (real USDC on Base)",
+      "amount": "0.001",
+      "tx_id": "0x53b89a35436f3d572dafe401b586ab3944b4f28d66e294213efa7b0b89fd3088",
+      "chain_id": 8453,
+      "x402_chain_id": 2366,
+      "merchant_body": "{\"commitment\":null,\"count\":1,\"domain\":\"anchor-x402/roll/v1\",\"input_hash\":\"33f2b37e8677675e698ff3f8d37383382abafd71adeb1cd534148f39e2b3f52b\",\"label\":null,\"range\":[1,100],\"result\":[10],\"result_hash\":\"34ae8091ab7227cf0aec896b923a6495861c75fbbb8452cb3d0025f576b26d3e\",\"scheme\":\"eip191\",\"signature\":\"0xf1b37ff549425d2bd7371f2c02eec6c466707983ffe0cb417edb54d9ba1d6d1a51e9782b629d6adbcb5e40e4a4d22294dc37f725bc2c40cb046e43b835ef7fb51c\",\"signer\":\"0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6\"}",
+      "spent_total": "0.003",
+      "detail": "{\n  \"_version\": \"1\",\n  \"delegation\": {\n    \"execution_constraints\": {\n      \"x402\": {\n        \"allowed_endpoints\": [\n          {\n            \"host\": \"api.anchor-x402.com\",\n            \"method\": \"POST\",\n            \"path_prefix\": \"/v1/roll\"\n          }\n        ],\n        \"scope_mode\": \"scoped\"\n      }\n    },\n    \"payment_policy\": {\n      \"currency\": \"USD\",\n      \"max_amount_per_tx\": \"0.01\",\n      \"max_total_amount\": \"0.05\"\n    },\n    \"task\": {\n      \"summary\": \"ThoughtProof Kite x OpenServ demo: one verifiable RNG roll at api.anchor-x402.com after TP gate ALLOW.\"\n    }\n  },\n  \"hint\": \"x402 request to https://api.anchor-x402.com/v1/roll completed with HTTP 200.\",\n  \"next_command\": \"\",\n  \"payment_requirement\": {\n    \"amount\": \"0.001\",\n    \"amount_onchain\": \"1000\",\n    \"asset\": \"USDC\",\n    \"decimals\": 6\n  },\n  \"session_id\": \"agent_REDACTED\",\n  \"session_status\": \"active\",\n  \"status\": \"success\",\n  \"usage\": {\n    \"asset_symbol\": \"USDC\",\n    \"decimals\": 6,\n    \"reserved_total\": \"0\",\n    \"reserved_total_raw\": \"0\",\n    \"spent_total\": \"0.003\",\n    \"spent_total_raw\": \"3000\"\n  },\n  \"x402\": {\n    \"chain_id\": 2366,\n    \"method\": \"POST\",\n    \"network\": \"eip155:8453\",\n    \"parsed_response_body\": {\n      \"commitment\": null,\n      \"count\": 1,\n      \"domain\": \"anchor-x402/roll/v1\",\n      \"input_hash\": \"33f2b37e8677675e698ff3f8d37383382abafd71adeb1cd534148f39e2b3f52b\",\n      \"label\": null,\n      \"range\": [\n        1,\n        100\n      ],\n      \"result\": [\n        10\n      ],\n      \"result_hash\": \"34ae8091ab7227cf0aec896b923a6495861c75fbbb8452cb3d0025f576b26d3e\",\n      \"scheme\": \"eip191\",\n      \"signature\": \"***\",\n      \"signer\": \"0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6\"\n    },\n    \"payment_response\": {\n      \"network\": \"eip155:8453\",\n      \"payer\": \"0xd801d12cD2F976505B23B112496754B902f2dC16\",\n      \"success\": true,\n      \"transaction\": \"0x53b89a35436f3d572dafe401b586ab3944b4f28d66e294213efa7b0b89fd3088\"\n    },\n    \"response_body\": \"{\\\"range\\\":[1,100],\\\"count\\\":1,\\\"commitment\\\":null,\\\"label\\\":null,\\\"result\\\":[10],\\\"input_hash\\\":\\\"33f2b37e8677675e698ff3f8d37383382abafd71adeb1cd534148f39e2b3f52b\\\",\\\"result_hash\\\":\\\"34ae8091ab7227cf0aec896b923a6495861c75fbbb8452cb3d0025f576b26d3e\\\",\\\"signature\\\":\\\"0x***\\\",\\\"signer\\\":\\\"0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6\\\",\\\"scheme\\\":\\\"eip191\\\",\\\"domain\\\":\\\"anchor-x402/roll/v1\\\"}\",\n    \"response_headers\": {\n      \"Apigw-Requestid\": \"GU5IBgipIAMEVVQ=\",\n      \"Content-Length\": \"483\",\n      \"Content-Type\": \"application/json\",\n      \"Date\": \"Wed, 04 Nov 2026 17:44:32 GMT\",\n      \"Payment-Response\": \"eyJzdWNjZXNzIjp0cnVlLCJwYXllciI6IjB4ZDgwMWQxMmNEMkY5NzY1MDVCMjNCMTEyNDk2NzU0QjkwMmYyZEMxNiIsInRyYW5zYWN0aW9uIjoiMHg1M2I4OWEzNTQzNmYzZDU3MmRhZmU0MDFiNTg2YWIzOTQ0YjRmMjhkNjZlMjk0MjEzZWZhN2IwYjg5ZmQzMDg4IiwibmV0d29yayI6ImVpcDE1NTo4NDUzIn0=\"\n    },\n    \"status_code\": 200,\n    \"url\": \"https://api.anchor-x402.com/v1/roll\",\n    \"wallet_address\": \"0xd801d12cD2F976505B23B112496754B902f2dC16\",\n    \"wallet_type\": \"agent_wallet\"\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "error": null,
+  "rounds": 2,
+  "final_raw": "{\"outcome\":\"PAID\",\"verdict\":\"ALLOW\",\"tx_id\":\"0x53b89a35436f3d572dafe401b586ab3944b4f28d66e294213efa7b0b89fd3088\",\"mode\":\"LIVE\"}",
+  "audit": [
+    {
+      "event": "tool",
+      "name": "verify_before_action",
+      "call_id": "call_20f41fa9bb5ad9aaf72e1bd7",
+      "args": {
+        "mandate": "Buy one verifiable RNG roll, max 0.01 USDC, from did:kite:api.anchor-x402.com, purpose rng_roll.",
+        "amount": 0.001,
+        "asset": "USDC",
+        "recipient": "did:kite:api.anchor-x402.com",
+        "purpose": "rng_roll"
+      },
+      "result": {
+        "verdict": "ALLOW",
+        "reason": "All critical steps adequately supported.\n\n[sentinel-cascade agreement_allow: primary=ALLOW, secondary=ALLOW]",
+        "gate": {
+          "mode": "enforce",
+          "wouldBlock": false,
+          "enforced": false,
+          "violations": []
+        },
+        "confidence": 1,
+        "models_used": [
+          "serv-pro",
+          "serv-swift"
+        ],
+        "duration_ms": 14626,
+        "receipt_id": "sent_6d446dffce334d46",
+        "http_status": 200
+      }
+    },
+    {
+      "event": "tool",
+      "name": "kite_pay",
+      "call_id": "call_c6492d2d044ab790a6d089b9",
+      "args": {
+        "amount": 0.001,
+        "asset": "USDC",
+        "recipient": "did:kite:api.anchor-x402.com",
+        "purpose": "rng_roll"
+      },
+      "result": {
+        "ok": true,
+        "mode": "LIVE",
+        "network": "base",
+        "note": "Kite Passport PRODUCTION payment (real USDC on Base)",
+        "amount": "0.001",
+        "tx_id": "0x53b89a35436f3d572dafe401b586ab3944b4f28d66e294213efa7b0b89fd3088",
+        "chain_id": 8453,
+        "x402_chain_id": 2366,
+        "merchant_body": "{\"commitment\":null,\"count\":1,\"domain\":\"anchor-x402/roll/v1\",\"input_hash\":\"33f2b37e8677675e698ff3f8d37383382abafd71adeb1cd534148f39e2b3f52b\",\"label\":null,\"range\":[1,100],\"result\":[10],\"result_hash\":\"34ae8091ab7227cf0aec896b923a6495861c75fbbb8452cb3d0025f576b26d3e\",\"scheme\":\"eip191\",\"signature\":\"0xf1b37ff549425d2bd7371f2c02eec6c466707983ffe0cb417edb54d9ba1d6d1a51e9782b629d6adbcb5e40e4a4d22294dc37f725bc2c40cb046e43b835ef7fb51c\",\"signer\":\"0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6\"}",
+        "spent_total": "0.003",
+        "detail": "{\n  \"_version\": \"1\",\n  \"delegation\": {\n    \"execution_constraints\": {\n      \"x402\": {\n        \"allowed_endpoints\": [\n          {\n            \"host\": \"api.anchor-x402.com\",\n            \"method\": \"POST\",\n            \"path_prefix\": \"/v1/roll\"\n          }\n        ],\n        \"scope_mode\": \"scoped\"\n      }\n    },\n    \"payment_policy\": {\n      \"currency\": \"USD\",\n      \"max_amount_per_tx\": \"0.01\",\n      \"max_total_amount\": \"0.05\"\n    },\n    \"task\": {\n      \"summary\": \"ThoughtProof Kite x OpenServ demo: one verifiable RNG roll at api.anchor-x402.com after TP gate ALLOW.\"\n    }\n  },\n  \"hint\": \"x402 request to https://api.anchor-x402.com/v1/roll completed with HTTP 200.\",\n  \"next_command\": \"\",\n  \"payment_requirement\": {\n    \"amount\": \"0.001\",\n    \"amount_onchain\": \"1000\",\n    \"asset\": \"USDC\",\n    \"decimals\": 6\n  },\n  \"session_id\": \"agent_REDACTED\",\n  \"session_status\": \"active\",\n  \"status\": \"success\",\n  \"usage\": {\n    \"asset_symbol\": \"USDC\",\n    \"decimals\": 6,\n    \"reserved_total\": \"0\",\n    \"reserved_total_raw\": \"0\",\n    \"spent_total\": \"0.003\",\n    \"spent_total_raw\": \"3000\"\n  },\n  \"x402\": {\n    \"chain_id\": 2366,\n    \"method\": \"POST\",\n    \"network\": \"eip155:8453\",\n    \"parsed_response_body\": {\n      \"commitment\": null,\n      \"count\": 1,\n      \"domain\": \"anchor-x402/roll/v1\",\n      \"input_hash\": \"33f2b37e8677675e698ff3f8d37383382abafd71adeb1cd534148f39e2b3f52b\",\n      \"label\": null,\n      \"range\": [\n        1,\n        100\n      ],\n      \"result\": [\n        10\n      ],\n      \"result_hash\": \"34ae8091ab7227cf0aec896b923a6495861c75fbbb8452cb3d0025f576b26d3e\",\n      \"scheme\": \"eip191\",\n      \"signature\": \"***\",\n      \"signer\": \"0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6\"\n    },\n    \"payment_response\": {\n      \"network\": \"eip155:8453\",\n      \"payer\": \"0xd801d12cD2F976505B23B112496754B902f2dC16\",\n      \"success\": true,\n      \"transaction\": \"0x53b89a35436f3d572dafe401b586ab3944b4f28d66e294213efa7b0b89fd3088\"\n    },\n    \"response_body\": \"{\\\"range\\\":[1,100],\\\"count\\\":1,\\\"commitment\\\":null,\\\"label\\\":null,\\\"result\\\":[10],\\\"input_hash\\\":\\\"33f2b37e8677675e698ff3f8d37383382abafd71adeb1cd534148f39e2b3f52b\\\",\\\"result_hash\\\":\\\"34ae8091ab7227cf0aec896b923a6495861c75fbbb8452cb3d0025f576b26d3e\\\",\\\"signature\\\":\\\"0x***\\\",\\\"signer\\\":\\\"0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6\\\",\\\"scheme\\\":\\\"eip191\\\",\\\"domain\\\":\\\"anchor-x402/roll/v1\\\"}\",\n    \"response_headers\": {\n      \"Apigw-Requestid\": \"GU5IBgipIAMEVVQ=\",\n      \"Content-Length\": \"483\",\n      \"Content-Type\": \"application/json\",\n      \"Date\": \"Wed, 04 Nov 2026 17:44:32 GMT\",\n      \"Payment-Response\": \"eyJzdWNjZXNzIjp0cnVlLCJwYXllciI6IjB4ZDgwMWQxMmNEMkY5NzY1MDVCMjNCMTEyNDk2NzU0QjkwMmYyZEMxNiIsInRyYW5zYWN0aW9uIjoiMHg1M2I4OWEzNTQzNmYzZDU3MmRhZmU0MDFiNTg2YWIzOTQ0YjRmMjhkNjZlMjk0MjEzZWZhN2IwYjg5ZmQzMDg4IiwibmV0d29yayI6ImVpcDE1NTo4NDUzIn0=\"\n    },\n    \"status_code\": 200,\n    \"url\": \"https://api.anchor-x402.com/v1/roll\",\n    \"wallet_address\": \"0xd801d12cD2F976505B23B112496754B902f2dC16\",\n    \"wallet_type\": \"agent_wallet\"\n  }\n}\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "usage": [
+    {
+      "id": "resp_09ec1f4f-5bc2-4976-a1b6-71a495baf4a9_1",
+      "request_id": "09ec1f4f-5bc2-4976-a1b6-71a495baf4a9",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 775,
+        "output_tokens": 76,
+        "total_tokens": 851,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "output_types": [
+        "function_call:verify_before_action"
+      ]
+    },
+    {
+      "id": "resp_09ec1f4f-5bc2-4976-a1b6-71a495baf4a9_2",
+      "request_id": "09ec1f4f-5bc2-4976-a1b6-71a495baf4a9",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 2541,
+        "output_tokens": 91,
+        "total_tokens": 2632,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "output_types": [
+        "function_call:kite_pay"
+      ]
+    },
+    {
+      "id": "resp_09ec1f4f-5bc2-4976-a1b6-71a495baf4a9",
+      "request_id": "09ec1f4f-5bc2-4976-a1b6-71a495baf4a9",
+      "status": "completed",
+      "usage": {
+        "input_tokens": 3305,
+        "output_tokens": 94,
+        "total_tokens": 3399,
+        "input_tokens_details": {
+          "cached_tokens": 0
+        },
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "output_types": [
+        "message"
+      ]
+    }
+  ]
+}

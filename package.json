@@ -1,0 +1,15 @@
+{
+  "name": "serv-kite-demo",
+  "private": true,
+  "type": "module",
+  "description": "OpenServ Hackathon 02 (Kite track) demo: pay only on ALLOW. Offline build, MOCK payments.",
+  "scripts": {
+    "test": "node --test test/*.test.ts",
+    "metric": "node scripts/metric.ts",
+    "scenarios": "node scripts/run-scenarios-offline.ts",
+    "demo:record": "bash demo-record.sh"
+  },
+  "engines": {
+    "node": ">=23.6"
+  }
+}

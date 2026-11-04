@@ -1,0 +1,44 @@
+{
+  "executed": false,
+  "final": "{\"outcome\":\"ERROR\",\"verdict\":\"ALLOW\",\"tx_id\":null,\"mode\":null}",
+  "verdict": "ALLOW",
+  "receipt_id": "sent_7e50167be3204798",
+  "reason": "All critical steps adequately supported.\n\n[sentinel-cascade agreement_allow: primary=ALLOW, secondary=ALLOW]",
+  "kite_calls": 1,
+  "pays": [
+    {
+      "ok": false,
+      "mode": "LIVE",
+      "error": "unexpected_chain",
+      "chain_id": null,
+      "chain_name": null,
+      "x402_chain_id": 2366,
+      "tx_id": null,
+      "merchant_body": "null",
+      "detail": "{\n  \"_version\": \"1\",\n  \"delegation\": {\n    \"execution_constraints\": {\n      \"x402\": {\n        \"allowed_endpoints\": [\n          {\n            \"host\": \"api.anchor-x402.com\",\n            \"method\": \"POST\",\n            \"path_prefix\": \"/v1/roll\"\n          }\n        ],\n        \"scope_mode\": \"scoped\"\n      }\n    },\n    \"payment_policy\": {\n      \"currency\": \"USD\",\n      \"max_amount_per_tx\": \"0.01\",\n      \"max_total_amount\": \"0.05\"\n    },\n    \"task\": {\n      \"summary\": \"ThoughtProof Kite x OpenServ demo: one verifiable RNG roll at api.anchor-x402.com after TP gate ALLOW.\"\n    }\n  },\n  \"hint\": \"x402 request to https://api.anchor-x402.com/v1/roll completed with HTTP 200.\",\n  \"next_command\": \"\",\n  \"payment_requirement\": {\n    \"amount\": \"0.001\",\n    \"amount_onchain\": \"1000\",\n    \"asset\": \"USDC\",\n    \"decimals\": 6\n  },\n  \"session_id\": \"agent_REDACTED\",\n  \"session_status\": \"active\",\n  \"status\": \"success\",\n  \"usage\": {\n    \"asset_symbol\": \"USDC\",\n    \"decimals\": 6,\n    \"reserved_total\": \"0\",\n    \"reserved_total_raw\": \"0\",\n    \"spent_total\": \"0.002\",\n    \"spent_total_raw\": \"2000\"\n  },\n  \"x402\": {\n    \"chain_id\": 2366,\n    \"method\": \"POST\",\n    \"network\": \"eip155:8453\",\n    \"parsed_response_body\": {\n      \"commitment\": null,\n      \"count\": 1,\n      \"domain\": \"anchor-x402/roll/v1\",\n      \"input_hash\": \"b840fb035fbbaed893e100bd94e67c0a39b74b3d8d0e160e093eba70ec2bb695\",\n      \"label\": \"thoughtproof-kite-demo\",\n      \"range\": [\n        1,\n        100\n      ],\n      \"result\": [\n        12\n      ],\n      \"result_hash\": \"70ffe12ec18e17934d3693cba196f388aabe3ff3e9c251cc66c8624ebedcba69\",\n      \"scheme\": \"eip191\",\n      \"signature\": \"***\",\n      \"signer\": \"0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6\"\n    },\n    \"payment_response\": {\n      \"network\": \"eip155:8453\",\n      \"payer\": \"0xd801d12cD2F976505B23B112496754B902f2dC16\",\n      \"success\": true,\n      \"transaction\": \"0xe152eed87817b84fdabbe84a3ca2efb3167179959d86f3d01a8fd1d9b35ff75c\"\n    },\n    \"response_body\": \"{\\\"range\\\":[1,100],\\\"count\\\":1,\\\"commitment\\\":null,\\\"label\\\":\\\"thoughtproof-kite-demo\\\",\\\"result\\\":[12],\\\"input_hash\\\":\\\"b840fb035fbbaed893e100bd94e67c0a39b74b3d8d0e160e093eba70ec2bb695\\\",\\\"result_hash\\\":\\\"70ffe12ec18e17934d3693cba196f388aabe3ff3e9c251cc66c8624ebedcba69\\\",\\\"signature\\\":\\\"0x***\\\",\\\"signer\\\":\\\"0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6\\\",\\\"scheme\\\":\\\"eip191\\\",\\\"domain\\\":\\\"anchor-x402/roll/v1\\\"}\",\n    \"response_headers\": {\n      \"Apigw-Requestid\": \"GU1zcjpsoAMEJkQ=\",\n      \"Content-Length\": \"503\",\n      \"Content-Type\": \"application/json\",\n      \"Date\": \"Wed, 04 Nov 2026 17:21:52 GMT\",\n      \"Payment-Response\": \"eyJzdWNjZXNzIjp0cnVlLCJwYXllciI6IjB4ZDgwMWQxMmNEMkY5NzY1MDVCMjNCMTEyNDk2NzU0QjkwMmYyZEMxNiIsInRyYW5zYWN0aW9uIjoiMHhlMTUyZWVkODc4MTdiODRmZGFiYmU4NGEzY2EyZWZiMzE2NzE3OTk1OWQ4NmYzZDAxYThmZDFkOWIzNWZmNzVjIiwibmV0d29yayI6ImVpcDE1NTo4NDUzIn0=\"\n    },\n    \"status_code\": 200,\n    \"url\": \"https://api.anchor-x402.com/v1/roll\",\n    \"wallet_address\": \"0xd801d12cD2F976505B23B112496754B902f2dC16\",\n    \"wallet_type\": \"agent_wallet\"\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "error": null,
+  "annotation": {
+    "added": "2026-11-04T18:24+01:00",
+    "corrected_outcome": "PAID (settled)",
+    "reason": "adapter read settlement chain from merchant_chain/chain_name which execute output does not contain; real fields are x402.payment_response.network=eip155:8453 (x402.chain_id=2366 is the Passport's Kite chain)",
+    "tx_hash": "0xe152eed87817b84fdabbe84a3ca2efb3167179959d86f3d01a8fd1d9b35ff75c",
+    "basescan": "https://basescan.org/tx/0xe152eed87817b84fdabbe84a3ca2efb3167179959d86f3d01a8fd1d9b35ff75c",
+    "amount": "0.001 USDC (1000 raw) on base",
+    "rng_result": [
+      12
+    ],
+    "rng_range": [
+      1,
+      100
+    ],
+    "merchant_signature_present": true,
+    "merchant_signature_note": "signature value redacted in detail by over-strict redact() at the time; signer 0x127462e296fAc1A7F5cF33bA57bB2f0FFf5cD0B6, scheme eip191",
+    "session_spent_total": "0.002",
+    "wallet_after": "0.998 USDC base",
+    "source": "kpass execute output (detail) + kpass activity completed 2026-11-04T17:21:52Z",
+    "onchain_verified_by_us": false
+  }
+}

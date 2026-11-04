@@ -1,0 +1,32 @@
+{
+  "executed": false,
+  "final": "{\"outcome\":\"ERROR\",\"verdict\":\"ALLOW\",\"tx_id\":null,\"mode\":null}",
+  "verdict": "ALLOW",
+  "receipt_id": "sent_4825518fb9d1485a",
+  "reason": "All critical steps adequately supported.\n\n[sentinel-cascade agreement_allow: primary=ALLOW, secondary=ALLOW]",
+  "kite_calls": 1,
+  "pays": [
+    {
+      "ok": false,
+      "mode": "LIVE",
+      "error": "unexpected_chain",
+      "chain_id": 2366,
+      "tx_id": null
+    }
+  ],
+  "error": null,
+  "annotation": {
+    "added": "2026-11-04T18:20+01:00",
+    "corrected_outcome": "PAID (settled)",
+    "reason": "adapter misread x402.chain_id=2366 (Kite chain) as settlement chain; settlement was on Base per kpass activity",
+    "tx_hash": "0xae7ea577e89c2d0d264e1359c9b453b7e88a5691dc7f444843d67fa525c59fc8",
+    "basescan": "https://basescan.org/tx/0xae7ea577e89c2d0d264e1359c9b453b7e88a5691dc7f444843d67fa525c59fc8",
+    "amount": "0.001 USDC (1000 raw) on base",
+    "payment_attempt_id": "pa-e8778b8fd5e4ceaafa73d6664eedf61cb5410e2060dcfc55fc6105e789a6b4e0",
+    "source": "kpass activity (status completed, 2026-11-04T17:18:04Z)",
+    "session_spent_total": "0.001",
+    "wallet_after": "0.999 USDC base",
+    "merchant_body": "NOT CAPTURED (lost; adapter did not persist output on this path)",
+    "onchain_verified_by_us": false
+  }
+}
