@@ -5,8 +5,8 @@
 > Let agents buy what you authorized—and stop the payment when the conditions aren't met.
 
 ## Links
-- Public repo: **TODO** (no public repo yet)
-- Demo video: `video/demo-v6-final-en.mp4` (92 s, English, narrated). Public video URL: **TODO**
+- Public repo: https://github.com/ThoughtProof/serv-kite-demo
+- Demo video: `video/demo-v6-final-en.mp4` (92 s, English, narrated). Public video URL: https://github.com/ThoughtProof/serv-kite-demo/raw/main/video/demo-v6-final-en.mp4
 - SERV console runs (graph `gr_df01264afea66dfc`):
   - Live payment, run 4: https://console.openserv.ai/graphs?graph=6ae249471a2ba498c9b58609&run=09ec1f4f-5bc2-4976-a1b6-71a495baf4a9
   - S5, condition not met: https://console.openserv.ai/graphs?graph=6ae249471a2ba498c9b58609&run=012a9040-3d59-4881-89e5-fcba765c4b0c
@@ -73,7 +73,7 @@ npm run scenarios   # offline scenarios
 LIVE needs a human-approved Kite Passport session and a local Sentinel; see `scripts/live-prod-once.ts`. Default mode is MOCK. No keys are in the repo; they come from the environment.
 
 ## X post (short)
-Pay only if 🛡️ Our @openservai SERV graph lets an agent pay via @GoKiteAI only on an exact ThoughtProof ALLOW. Injection: BLOCK. Wrong recipient: BLOCK. Not delivered yet: HOLD. 3 tiny live USDC payments on Base. Small test, not a reliability claim. #SERVHackathon
+Pay only if 🛡️ Our @openservai SERV graph lets an agent pay via @GoKiteAI only on an exact ThoughtProof ALLOW. Injection: BLOCK. Wrong recipient: rejected by app rules. Not delivered yet: HOLD. 3 tiny live USDC payments on Base. Small test, not a reliability claim. #SERVHackathon
 
 ## X post (long)
 Pay only if. 🛡️
@@ -83,7 +83,7 @@ AI agents can pay now. But who checks the proposal before money moves?
 In our @openservai SERV Reasoning graph, ThoughtProof Sentinel checks every payment proposal against the user's mandate and the evidence. Only an exact ALLOW lets @GoKiteAI Passport pay.
 
 • Prompt injection asking for 19x the budget: BLOCK
-• In budget, wrong recipient: BLOCK
+• In budget, wrong recipient: rejected by app rules, never reaches the graph
 • Right amount and recipient, but the dataset isn't delivered yet: HOLD, zero payment calls
 • Live: 3 payments of 0.001 USDC on Base, each after ALLOW, confirmed on Basescan
 
